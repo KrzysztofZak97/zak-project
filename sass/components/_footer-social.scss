@@ -1,0 +1,44 @@
+.footer-social {
+  margin-left: 70px;
+  margin-top: 72px;
+
+  &__h3 {
+    margin-bottom: 20px;
+    color: $whitecolor;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__media {
+    list-style: none;
+    display: flex;
+    margin-top: 16px;
+  }
+  &__list-item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    fill: $whitecolor;
+    background-color: $socialiconbg;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: $whitecolor;
+      background-color: $brand-color;
+      outline: none;
+    }
+  }
+}

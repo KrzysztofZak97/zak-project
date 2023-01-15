@@ -1,0 +1,44 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+
+  &__visible {
+    margin-top: 4px;
+    width: 16px;
+    height: 15px;
+    border: $font-color 1px solid;
+    border-radius: 2px;
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    left: -1px;
+  }
+  &__form {
+    position: absolute;
+    margin-top: 4px;
+    width: 16px;
+    height: 15px;
+    display: none;
+
+    &:checked + .checkbox__visible > .checkbox__icon {
+      opacity: 1;
+      border: 0px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $graycolor;
+    margin-left: 8px;
+
+    & a {
+      color: $brand-color;
+    }
+  }
+}

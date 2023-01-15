@@ -1,0 +1,33 @@
+.footer-item {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__text {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $whitecolor;
+  }
+  &__contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    color: $graycolor;
+    margin-bottom: 9px;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+      outline: none;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.contact-box {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &__text {
+    @extend .nav-box__text;
+    margin-left: 30px;
+    color: $graycolor;
+    fill: $graycolor;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+    &:hover,
+    &:focus {
+      fill: $brand-color;
+      color: $brand-color;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}

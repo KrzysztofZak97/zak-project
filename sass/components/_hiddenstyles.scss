@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: $font-color;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $font-color;
+  margin-bottom: 50px;
+}
+img {
+  display: block;
+}
+textarea:hover::placeholder,
+textarea:focus::placeholder {
+  color: $brand-color;
+}
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-top: 3px;
+  color: rgba(0, 0, 0, 0.6);
+}

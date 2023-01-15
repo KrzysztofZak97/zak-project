@@ -1,0 +1,45 @@
+.h1-background {
+  background-color: $background-color;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/backgroundh1.jpg");
+}
+.h1-box {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $whitecolor;
+    width: 696px;
+    margin: 0px;
+  }
+  &__button {
+    background-color: $brand-color;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $whitecolor;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

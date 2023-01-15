@@ -1,0 +1,38 @@
+.padding-bottom-0 {
+  padding-bottom: 0px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  &__item {
+    justify-content: center;
+    background-color: $whitecolor;
+
+    &--background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $sectionbg;
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+    }
+  }
+  &__h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $graycolor;
+  }
+}

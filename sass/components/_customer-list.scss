@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  &__customer {
+    border: 1px solid $iconcolor;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    fill: $iconcolor;
+    &:hover,
+    &:focus {
+      fill: $brand-color;
+      cursor: pointer;
+      border: 1px solid $brand-color;
+      outline: none;
+    }
+  }
+}
