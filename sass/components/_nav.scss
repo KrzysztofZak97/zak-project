@@ -1,39 +1,46 @@
 .nav-box {
-  margin-right: 351px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  display: none;
+}
 
-  &__text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    text-decoration: none;
-    margin-left: 46px;
-    color: $font-color;
+@media (min-width: 1200px) {
+  .nav-box {
+    display: block;
+    margin-right: 351px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 
-    &:first-child {
-      margin-left: 0px;
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      text-decoration: none;
+      margin-left: 46px;
+      color: $font-color;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+      &:hover,
+      &:focus {
+        color: $brand-color;
+        outline: none;
+      }
     }
-    &:hover,
-    &:focus {
+    &--link-active {
+      position: relative;
       color: $brand-color;
-      outline: none;
-    }
-  }
-  &--link-active {
-    position: relative;
-    color: $brand-color;
 
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 46.8px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: $brand-color;
-      border-radius: 2px;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 46.8px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $brand-color;
+        border-radius: 2px;
+      }
     }
   }
 }

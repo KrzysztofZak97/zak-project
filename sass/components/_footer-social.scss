@@ -1,7 +1,5 @@
 .footer-social {
-  margin-left: 70px;
-  margin-top: 72px;
-
+  text-align: center;
   &__h3 {
     margin-bottom: 20px;
     color: $whitecolor;
@@ -40,5 +38,12 @@
       background-color: $brand-color;
       outline: none;
     }
+  }
+}
+@media (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+    margin-top: 72px;
+    text-align: start;
   }
 }

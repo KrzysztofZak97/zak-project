@@ -7,7 +7,7 @@
   &__customer {
     border: 1px solid $iconcolor;
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
@@ -18,6 +18,13 @@
       cursor: pointer;
       border: 1px solid $brand-color;
       outline: none;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .list {
+    &__customer {
+      width: 170px;
     }
   }
 }

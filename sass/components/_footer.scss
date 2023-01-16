@@ -3,4 +3,12 @@
 }
 .footer-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .footer-box {
+    flex-direction: row;
+    align-items: stretch;
+  }
 }

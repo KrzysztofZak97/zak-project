@@ -1,14 +1,13 @@
 .logo {
-  margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   text-decoration: none;
 
   &__web {
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $brand-color;
   }
@@ -16,5 +15,23 @@
     @extend .logo__web;
     color: black;
     text-decoration: none;
+  }
+}
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+
+    &__web {
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+    }
+    &__studio {
+      @extend .logo__web;
+      color: black;
+      text-decoration: none;
+    }
   }
 }

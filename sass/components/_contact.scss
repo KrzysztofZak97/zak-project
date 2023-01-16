@@ -1,26 +1,70 @@
 .contact-box {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: none;
+}
 
-  &__text {
-    @extend .nav-box__text;
-    margin-left: 30px;
-    color: $graycolor;
-    fill: $graycolor;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-    &:first-child {
-      margin-left: 0px;
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      margin-left: 30px;
+      text-decoration: none;
+      color: $graycolor;
+      fill: $graycolor;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+      &:hover,
+      &:focus {
+        fill: $brand-color;
+        color: $brand-color;
+        outline: none;
+      }
     }
-    &:hover,
-    &:focus {
-      fill: $brand-color;
-      color: $brand-color;
-      outline: none;
+
+    &__icon {
+      margin-right: 10px;
+      vertical-align: middle;
     }
   }
+}
+@media (min-width: 1200px) {
+  .contact-box {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  &__icon {
-    margin-right: 10px;
-    vertical-align: middle;
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      margin-left: 30px;
+      text-decoration: none;
+      color: $graycolor;
+      fill: $graycolor;
+
+      &:first-child {
+        margin-left: 0px;
+      }
+      &:hover,
+      &:focus {
+        fill: $brand-color;
+        color: $brand-color;
+        outline: none;
+      }
+    }
+
+    &__icon {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
   }
 }

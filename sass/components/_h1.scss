@@ -4,24 +4,25 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/backgroundh1.jpg");
+    url("../images/backgroundh1mobile.jpg");
 }
 .h1-box {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 768px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__text {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $whitecolor;
-    width: 696px;
+    width: 365px;
     margin: 0px;
   }
   &__button {
@@ -40,6 +41,25 @@
 
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .h1-background {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/backgroundh1.jpg");
+  }
+  .h1-box {
+    max-width: 1200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    &__text {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
     }
   }
 }
