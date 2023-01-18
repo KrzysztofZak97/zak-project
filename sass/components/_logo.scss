@@ -17,6 +17,14 @@
     text-decoration: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-right: 83px;
+    justify-content: center;
+  }
+}
 @media (min-width: 1200px) {
   .logo {
     margin-right: 93px;

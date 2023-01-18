@@ -1,9 +1,11 @@
 .buttons-portfolio {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   padding-bottom: 50px;
 
   &__item {
+    margin-top: 15px;
     margin-right: 8px;
     padding: 6px 22px;
     background: $sectionbg;
@@ -27,6 +29,20 @@
     }
     &:last-child {
       margin-right: 0px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .buttons-portfolio {
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .buttons-portfolio {
+    justify-content: center;
+
+    &__item {
+      margin-top: 0;
     }
   }
 }

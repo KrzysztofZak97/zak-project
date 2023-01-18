@@ -21,6 +21,13 @@
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list {
+    &__customer {
+      width: 226;
+    }
+  }
+}
 @media (min-width: 1200px) {
   .list {
     &__customer {

@@ -31,14 +31,23 @@
   }
   &__text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 2;
     letter-spacing: 0.03em;
     color: $graycolor;
     margin-left: 8px;
 
     & a {
       color: $brand-color;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .checkbox {
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 }

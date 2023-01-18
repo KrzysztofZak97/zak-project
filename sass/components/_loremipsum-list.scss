@@ -35,6 +35,21 @@
     color: $graycolor;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .padding-bottom-0 {
+    padding-bottom: 45px;
+  }
+  .list {
+    &__item {
+      &--background {
+        width: 354px;
+      }
+    }
+    &__text {
+      width: 354px;
+    }
+  }
+}
 @media (min-width: 1200px) {
   .padding-bottom-0 {
     padding-bottom: 0px;

@@ -7,7 +7,7 @@
     url("../images/backgroundh1mobile.jpg");
 }
 .h1-box {
-  max-width: 768px;
+  max-width: 480px;
   padding-top: 118px;
   padding-bottom: 118px;
   display: flex;
@@ -42,6 +42,18 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .h1-background {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/backgroundh1tablet.jpg");
+  }
+  .h1-box {
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {

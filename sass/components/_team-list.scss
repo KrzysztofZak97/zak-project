@@ -36,8 +36,16 @@
     color: $graycolor;
   }
 }
-@media screen and (min-width:768px) and (max-width:1199px){
-  
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list {
+    &__img-size {
+      width: 354px;
+      height: 374px;
+    }
+    &__figure-box {
+      width: 354px;
+    }
+  }
 }
 @media (min-width: 1200px) {
   .list {

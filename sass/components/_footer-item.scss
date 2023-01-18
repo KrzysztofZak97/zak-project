@@ -32,6 +32,12 @@
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-item {
+    margin-left: 61px;
+    margin-right: 144px;
+  }
+}
 @media (min-width: 1200px) {
   .footer-item {
     align-items: stretch;

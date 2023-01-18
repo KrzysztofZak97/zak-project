@@ -1,6 +1,7 @@
 .header-box {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .header-line {
   border-bottom: 1px solid $borderheader;
