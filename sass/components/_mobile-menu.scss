@@ -39,7 +39,7 @@
 }
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
+  top: 12px;
   right: 16px;
   color: $font-color;
 }
@@ -48,12 +48,14 @@
   margin: 0;
   list-style: none;
   margin-bottom: 302px;
-  &:first-child {
-    margin-top: 0;
+  &__item {
+    margin-top: 36px;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   &__link {
     display: block;
-    margin-top: 10px;
     color: $font-color;
     text-decoration: none;
     font-family: "Roboto";
@@ -65,6 +67,9 @@
     &:focus-within {
       color: $brand-color;
       outline: none;
+    }
+    &--active {
+      color: $brand-color;
     }
   }
 }

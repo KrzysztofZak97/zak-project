@@ -484,6 +484,8 @@
                   name="email"
                   placeholder="E-mail"
                   required
+                  required
+                  required
                 />
               </label>
               <button class="submit-button" type="submit">
@@ -599,11 +601,19 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="index.html" class="mobile-menu__link">Agencja</a></li>
-        <li>
+        <li class="mobile-menu__item">
+          <a
+            href="index.html"
+            class="mobile-menu__link mobile-menu__link--active"
+            >Agencja</a
+          >
+        </li>
+        <li class="mobile-menu__item">
           <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
         </li>
-        <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Kontakt</a>
+        </li>
       </ul>
       <div class="mobile-contact">
         <a class="mobile-contact__tel" href="Tel:+48111111111">

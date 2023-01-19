@@ -37,7 +37,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $whitecolor;
-    width: 365px;
+    max-width: 365px;
     margin: 0px;
   }
   &__button {
@@ -69,6 +69,9 @@
   }
   .h1-box {
     max-width: 768px;
+    &__text {
+      max-width: 365px;
+    }
   }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -100,7 +103,7 @@
     &__text {
       font-size: 44px;
       line-height: 1.36;
-      width: 696px;
+      max-width: 696px;
     }
   }
   @media screen and (min-device-pixel-ratio: 2),
